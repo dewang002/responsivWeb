@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifd;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  
+}
+#main{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+nav h1{
+  font-size: 3vw;
+  font-weight: 700;
+}
+nav{
+ 
+  height: calc(10vh - 20px);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vw 6vw;
+  color: #000000;
+  gap: 20vw;
+  margin-bottom: 20px;
+  
+}
+.navpart button{
+  padding: 0.5vw 2vw;
+  border-radius: 10px;
+  background-color: #F286F8;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+}
+
+.navpart{
+  
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  
+}
+.navpart h3{
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.secimg{
+  font-weight: 600;
+  display: none;
+  margin-right: 10px;
+}
+.page1{
+  height: calc(100% - 10vh);
+  width: 100vw;
+  
+  display: flex;
+  overflow: hidden;
+}
+.left{
+  height: 100%;
+  width: 40%;
+  padding: 4vw 6vw;
+}
+.left h1{
+  font-size: 4.5vw;
+  font-weight: 700;
+}
+.left h1 span{
+  color: #F286F8;
+}
+.left p{
+  margin-top: 30px;
+  font-size: 1.5vw;
+}
+.left button{
+  margin-top: 20px;
+  padding: 0.6vw 2vw;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background-color:#F286F8;
+  color: #fff;
+  text-decoration: none;
+}
+
+.right{
+  height: 100%;
+  width: 60%;
+}
+.right img{
+  height: 100%;
+  width: 100%;
+  
+}
+
+/* -------------------mobile version */
+/* code start------------ */
+
+@media (max-width:600px){
+  #main{
+    overflow-x: hidden;
+
+  }
+  .secimg{
+    
+    display: block;
+    width: 6vw;
+    margin-right: 5vw;
+    
+  }
+  nav h1{
+    font-size: 5vw;
+    font-weight: 900;
+    
+  }
+  
+  nav{
+    margin-bottom: 10px;
+    gap: 10vw;
+    padding:0 7vw ;
+    
+    color: #000000;
+  }
+  
+  .navpart h3{
+    display: none;
+  }
+  .navpart button{
+    display: none;
+  }
+ 
+   
+  
+  .right img{
+    height: 98%;
+  }
+
+  .page1{
+    height: calc(100%-30px) ;
+    flex-direction: column;
+    
+  }
+.left{
+  width: 100%;
+  height: 50%;
+  z-index: 9;
+}
+.left h1{
+  width: 95%;
+  font-size: 10vw;
+  line-height: 50px;
+}
+.left button{
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  
+}
+.left p{
+  font-size: 2.5vw;
+  width: 80%;
+}
+.right{
+  width:100%;
+  height:50%;
+}
+
+  
+}
